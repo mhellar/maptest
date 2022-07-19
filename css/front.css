@@ -1,0 +1,134 @@
+html {
+  height: 100%;
+  background-image:    url(../img/front/background_2.png);
+background-size:     cover;                      /* <------ */
+background-repeat:   no-repeat;
+background-position: center center;              /* optional, center the image */
+
+}
+
+.YOU-BE-MY-ALLY {
+  object-fit: contain;
+  text-shadow: 0 0 7px rgba(0, 5, 255, 0.52);
+  font-family: Raleway, sans-serif;
+  font-size: 5vmax;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.08px;
+  text-align: center;
+  color: #000000;
+}
+
+.UNIVERSITY-OF-CHICAG {
+  width: 399px;
+  height: 19px;
+  text-shadow: 0 0 10px #eae7ff;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.79px;
+  text-align: center;
+  color: #000000;
+}
+
+hr {
+  color: #000000;
+  width:5%;
+  height: 1px;
+  border-width: 0px;
+  background-color: black;
+}
+
+.centered {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+
+.centered2 {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered-dash {
+  position: fixed;
+  top: 59%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered3 {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered4 {
+  position: fixed;
+  top: 74%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered5 {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.In-order-to-enjoy-th {
+  width: 237px;
+  height: 62px;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.59px;
+  text-align: center;
+  color: #000000;
+}
+
+/*note this is for the BEGIN button*/
+.begin {
+  width: 47px;
+  height: 22px;
+  object-fit: contain;
+  text-shadow: 0 0 3px rgba(13, 0, 255, 0.31);
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.69px;
+  text-align: center;
+  color: #000000;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+
+

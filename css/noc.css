@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+  background-image:    url(../img/front/background_2.png);
+background-size:     cover;                      /* <------ */
+background-repeat:   no-repeat;
+background-position: center center;              /* optional, center the image */
+
+}
+
+.Although-you-are-not {
+  padding: 50% 5%;
+  text-shadow: 0 0 8px rgba(184, 170, 255, 0.75);
+  font-family: Raleway;
+  font-size: 16px;
+  letter-spacing: 0.84px;
+  text-align: center;
+  color: #000000;
+}
+
+
+.centered {
+  position: fixed;
+}
+
+.centered2 {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered3 {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered4 {
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.centered5 {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.In-order-to-enjoy-th {
+  width: 237px;
+  height: 62px;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.59px;
+  text-align: center;
+  color: #000000;
+}
+
+.Begin {
+  width: 47px;
+  height: 22px;
+  object-fit: contain;
+  text-shadow: 0 0 3px rgba(13, 0, 255, 0.31);
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: 0.69px;
+  text-align: center;
+  color: #000000;
+}
+
+a {
+  bottom: 7vmax;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: 900;
+  text-shadow: 0 0 3px rgba(13, 0, 255, 0.31);
+  font-family: Raleway, sans-serif;
+  position: absolute; 
+  left: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+

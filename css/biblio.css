@@ -1,0 +1,83 @@
+.accordion {
+    background-color:white;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    padding-left: 10%;
+}
+
+.accordion:after {
+    content: '\2228';
+    font-size: 14px;
+    color: black;
+    float: right;
+    margin-right: 10%;
+    transform: scaleX(2);
+}
+  
+.active:after {
+    content: "\2227";
+}
+
+button {
+    background: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+.font-light {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.45px;
+}
+
+.font-bold {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.45px;
+}
+
+h1 {
+    padding: 5% 0% 5% 10%;
+}
+
+h2 {
+    padding: 10% 5% 5% 10%;
+}
+
+hr {
+    width:80%;
+    height: 1px;
+    border-width: 0px;
+    background-color: rgba(199, 198, 198, 0.85);
+  }
+
+.full {
+    width: 100vmin;
+    padding: 0px 0px 0px 0px;
+}
+  
+.panel {
+    padding: 0% 10%;
+    background-color: white;
+    color: rgba(0,0,0,.85);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+p {
+    margin-top: revert;
+    margin-bottom: revert;
+}
+
+.hide{
+    display: inline;
+}
