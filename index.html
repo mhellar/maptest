@@ -100,7 +100,7 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/paulineroques/ckeml88y32ed319mtoj92z7ht',
-            center: [-122.40329, 37.75846],
+            center: [-122.403334, 37.75848],
             zoom: 16,
             pitch: 0,
             bearing: 0,
@@ -146,13 +146,13 @@
                 // }
 
                 var Cobb = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-122.40329, 37.75846),
-                    new mapboxgl.LngLat(-122.40329, 37.75846)
+                    new mapboxgl.LngLat(-122.40333, 37.75848),
+                    new mapboxgl.LngLat(-122.40333, 37.75849)
                 );
                 var llCobb = new mapboxgl.LngLat(lon, lat);
                 console.log(Cobb.contains(llCobb)); // = true
                 if (Cobb.contains(llCobb) == 1) {
-                    addStart(-122.40329, 37.75846,
+                    addStart(-122.40333, 37.75848,
                         '<a href="redir.html"><img class="marker" id="Cobb" src="https://github.com/mhellar/maptest/raw/main/startThumbnailCobb.png"></a>'
                         );
                 }
