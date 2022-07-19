@@ -156,6 +156,17 @@
                         '<a href="redir.html"><img class="marker" id="Cobb" src="https://github.com/mhellar/maptest/raw/main/startThumbnailCobb.png"></a>'
                         );
                 }
+                var Laird = new mapboxgl.LngLatBounds(
+                    new mapboxgl.LngLat(-122.40277, 37.75742),
+                    new mapboxgl.LngLat(-122.40277, 37.75742)
+                );
+                var llLaird = new mapboxgl.LngLat(lon, lat);
+                console.log(Laird.contains(llLaird)); // = true
+                if (Laird.contains(llLaird) == 1) {
+                    addStart(-122.40277, 37.75742,
+                        '<a href="redir.html"><img class="marker" id="Cobb" src="https://github.com/mhellar/maptest/raw/main/startThumbnailCobb.png"></a>'
+                    );
+                }
             });
             map.loadImage(
                 'img/location.png',
@@ -179,6 +190,19 @@
                                     'properties': {
                                         'description': '<a href="redir.html"><img class="marker" id="Cobb" src="https://github.com/mhellar/maptest/raw/main/startThumbnailCobb.png"></a>',
                                         'title': "Mark's Studio"
+                                    }
+                                },
+                                {
+                                    'type': 'Feature',
+                                    'geometry': {
+                                        'type': 'Point',
+                                        'coordinates': [
+                                        -122.40277, 37.75742
+                                        ]
+                                    },
+                                    'properties': {
+                                        'description': '<a href="redir2.html"><img class="marker" id="Cobb" src="https://github.com/mhellar/maptest/raw/main/startThumbnailCobb.png"></a>',
+                                        'title': "Garden"
                                     }
                                 }
 
