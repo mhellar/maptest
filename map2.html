@@ -100,7 +100,7 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/paulineroques/ckeml88y32ed319mtoj92z7ht',
-            center: [-87.60093, 41.78896],
+            center: [-122.40329, 37.75846],
             zoom: 16,
             pitch: 0,
             bearing: 0,
@@ -135,99 +135,99 @@
                 var position = [lon, lat];
                 console.log(position);
 
-                var campus = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat( -87.62046, 41.78008),
-                    new mapboxgl.LngLat(-87.57459, 41.81081)
-                );
-                var llCampus = new mapboxgl.LngLat(lon, lat);
-                console.log(campus.contains(llCampus)); // = true
-                if (campus.contains(llCampus) != 1) {
-                    location.href = 'noc.html';
-                }
+                // var campus = new mapboxgl.LngLatBounds(
+                //     new mapboxgl.LngLat( -122.40329, 37.75846),
+                //     new mapboxgl.LngLat(-122.40329, 37.75846)
+                // );
+                // var llCampus = new mapboxgl.LngLat(lon, lat);
+                // console.log(campus.contains(llCampus)); // = true
+                // if (campus.contains(llCampus) != 1) {
+                //     location.href = 'noc.html';
+                // }
 
                 var Cobb = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-87.60072, 41.78888),
-                    new mapboxgl.LngLat(-87.60046, 41.78906)
+                    new mapboxgl.LngLat(-122.40329, 37.75846),
+                    new mapboxgl.LngLat(-122.40329, 37.75846)
                 );
                 var llCobb = new mapboxgl.LngLat(lon, lat);
                 console.log(Cobb.contains(llCobb)); // = true
                 if (Cobb.contains(llCobb) == 1) {
-                    addStart(-87.60093, 41.78896,
+                    addStart(-122.40329, 37.75846,
                         '<a href="cobb/index.html"><img class="marker" id="Cobb" src="img/startThumbnailcobb.png"></a>'
                         );
                 }
 
-                var Laird = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-87.59919, 41.78575),
-                    new mapboxgl.LngLat(-87.59896, 41.78593)
-                );
-                var llLaird = new mapboxgl.LngLat(lon, lat);
-                console.log(Laird.contains(llLaird)); // = true
-                if (Laird.contains(llLaird) == 1) {
-                    addStart(-87.599, 41.78506,
-                        '<a href="laird/index.html"><img class="marker" id="Laird" src="img/startThumbnailLawSchool.png"></a>'
-                        );
-                }
+                // var Laird = new mapboxgl.LngLatBounds(
+                //     new mapboxgl.LngLat(-87.59919, 41.78575),
+                //     new mapboxgl.LngLat(-87.59896, 41.78593)
+                // );
+                // var llLaird = new mapboxgl.LngLat(lon, lat);
+                // console.log(Laird.contains(llLaird)); // = true
+                // if (Laird.contains(llLaird) == 1) {
+                //     addStart(-87.599, 41.78506,
+                //         '<a href="laird/index.html"><img class="marker" id="Laird" src="img/startThumbnailLawSchool.png"></a>'
+                //         );
+                // }
 
-                var Logan = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-87.60372, 41.7857),
-                    new mapboxgl.LngLat(-87.60348, 41.78588)
-                );
-                var llLogan = new mapboxgl.LngLat(lon, lat);
-                console.log(Logan.contains(llLogan)); // = true
-                if (Logan.contains(llLogan) == 1) {
-                    addStart(-87.60356, 41.78536,
-                        '<a href="logan/index.html"><img class="marker" id="Logan" src="img/startThumbnailLogan.png"></a>'
-                        );
-                }
+                // var Logan = new mapboxgl.LngLatBounds(
+                //     new mapboxgl.LngLat(-87.60372, 41.7857),
+                //     new mapboxgl.LngLat(-87.60348, 41.78588)
+                // );
+                // var llLogan = new mapboxgl.LngLat(lon, lat);
+                // console.log(Logan.contains(llLogan)); // = true
+                // if (Logan.contains(llLogan) == 1) {
+                //     addStart(-87.60356, 41.78536,
+                //         '<a href="logan/index.html"><img class="marker" id="Logan" src="img/startThumbnailLogan.png"></a>'
+                //         );
+                // }
 
-                var Rockefeller = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-87.59721, 41.78787),
-                    new mapboxgl.LngLat(-87.59693, 41.78805)
-                );
-                var llRockefeller = new mapboxgl.LngLat(lon, lat);
-                console.log(Rockefeller.contains(llRockefeller)); // = true
-                if (Rockefeller.contains(llRockefeller) == 1) {
-                    addStart(-87.59707, 41.78856,
-                        '<a href="rockefeller/index.html"><img class="marker" id="Rockefeller" src="img/startThumbnailRockefellerMemorialChapel.png"></a>'
-                        );
-                }
+                // var Rockefeller = new mapboxgl.LngLatBounds(
+                //     new mapboxgl.LngLat(-87.59721, 41.78787),
+                //     new mapboxgl.LngLat(-87.59693, 41.78805)
+                // );
+                // var llRockefeller = new mapboxgl.LngLat(lon, lat);
+                // console.log(Rockefeller.contains(llRockefeller)); // = true
+                // if (Rockefeller.contains(llRockefeller) == 1) {
+                //     addStart(-87.59707, 41.78856,
+                //         '<a href="rockefeller/index.html"><img class="marker" id="Rockefeller" src="img/startThumbnailRockefellerMemorialChapel.png"></a>'
+                //         );
+                // }
 
-                var Mansueto = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-87.60081, 41.7914),
-                    new mapboxgl.LngLat(-87.60057, 41.79159)
-                );
-                var llMansueto = new mapboxgl.LngLat(lon, lat);
-                console.log(Mansueto.contains(llMansueto)); // = true
-                if (Mansueto.contains(llMansueto) == 1) {
-                    addStart(-87.60086, 41.79196,
-                        '<a href="mansueto/index.html"><img class="marker" id="Mansueto" src="img/startThumbnailMansueto.png"></a>'
-                        );
-                }
+                // var Mansueto = new mapboxgl.LngLatBounds(
+                //     new mapboxgl.LngLat(-87.60081, 41.7914),
+                //     new mapboxgl.LngLat(-87.60057, 41.79159)
+                // );
+                // var llMansueto = new mapboxgl.LngLat(lon, lat);
+                // console.log(Mansueto.contains(llMansueto)); // = true
+                // if (Mansueto.contains(llMansueto) == 1) {
+                //     addStart(-87.60086, 41.79196,
+                //         '<a href="mansueto/index.html"><img class="marker" id="Mansueto" src="img/startThumbnailMansueto.png"></a>'
+                //         );
+                // }
 
-                var Cummings = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-87.60226, 41.78999),
-                    new mapboxgl.LngLat(-87.60199, 41.79017)
-                );
-                var llCummings = new mapboxgl.LngLat(lon, lat);
-                console.log(Cummings.contains(llCummings)); // = true
-                if (Cummings.contains(llCummings) == 1) {
-                    addStart(-87.60276, 41.78986,
-                        '<a href="cummings/index.html"><img class="marker" id="Cummings" src="img/startThumbnailCummings.png"></a>'
-                        );
-                }
+                // var Cummings = new mapboxgl.LngLatBounds(
+                //     new mapboxgl.LngLat(-87.60226, 41.78999),
+                //     new mapboxgl.LngLat(-87.60199, 41.79017)
+                // );
+                // var llCummings = new mapboxgl.LngLat(lon, lat);
+                // console.log(Cummings.contains(llCummings)); // = true
+                // if (Cummings.contains(llCummings) == 1) {
+                //     addStart(-87.60276, 41.78986,
+                //         '<a href="cummings/index.html"><img class="marker" id="Cummings" src="img/startThumbnailCummings.png"></a>'
+                //         );
+                // }
 
-                var SSA = new mapboxgl.LngLatBounds(
-                    new mapboxgl.LngLat(-87.60188, 41.78578),
-                    new mapboxgl.LngLat(-87.60163, 41.78596)
-                );
-                var llSSA = new mapboxgl.LngLat(lon, lat);
-                console.log(SSA.contains(llSSA)); // = true
-                if (SSA.contains(llSSA) == 1) {
-                    addStart(-87.60173, 41.78557,
-                        '<a href="sss/index.html"><img class="marker" id="SSA" src="img/startThumbnailSchoolOfSocialServicesAdmin@3x.png"></a>'
-                        );
-                }
+                // var SSA = new mapboxgl.LngLatBounds(
+                //     new mapboxgl.LngLat(-87.60188, 41.78578),
+                //     new mapboxgl.LngLat(-87.60163, 41.78596)
+                // );
+                // var llSSA = new mapboxgl.LngLat(lon, lat);
+                // console.log(SSA.contains(llSSA)); // = true
+                // if (SSA.contains(llSSA) == 1) {
+                //     addStart(-87.60173, 41.78557,
+                //         '<a href="sss/index.html"><img class="marker" id="SSA" src="img/startThumbnailSchoolOfSocialServicesAdmin@3x.png"></a>'
+                //         );
+                // }
 
             });
             map.loadImage(
@@ -253,89 +253,90 @@
                                         'description': '<img class="marker" id="Cobb" src="img/thumbnail-cobb@3x.png">',
                                         // 'title': 'Cobb Lecture Hall'
                                     }
-                                },
-                                {
-                                    'type': 'Feature',
-                                    'geometry': {
-                                        'type': 'Point',
-                                        'coordinates': [-87.599, 41.78506]
-                                    },
-                                    'properties': {
-                                        'description': '<img class="marker" id="Laird" src="img/thumbnail-law-school@3x.png">',
-                                        // 'title': 'Laird Bell Law Quadrangle'
-                                    }
-                                },
-                                {
-                                    'type': 'Feature',
-                                    'geometry': {
-                                        'type': 'Point',
-                                        'coordinates': [
-                                            -87.60356,
-                                            41.78536
-                                        ]
-                                    },
-                                    'properties': {
-                                        'description': '<img class="marker" id="Logan" src="img/thumbnail-logan@3x.png">',
-                                        // 'title': 'Reva and David Logan Center for the Arts'
-                                    }
-                                },
-                                {
-                                    'type': 'Feature',
-                                    'geometry': {
-                                        'type': 'Point',
-                                        'coordinates': [
-                                            -87.59707,
-                                            41.78856
-                                        ]
-                                    },
-                                    'properties': {
-                                        'description': '<img class="marker" id="Rockefeller" src="img/thumbnail-rockefeller-memorial-chapel@3x.png">',
-                                        // 'title': 'Rockefeller Memorial Chapel'
-                                    }
-                                },
-                                {
-                                    'type': 'Feature',
-
-                                    'geometry': {
-                                        'type': 'Point',
-                                        'coordinates': [
-                                            -87.60086,
-                                            41.79196
-                                        ]
-                                    },
-                                    'properties': {
-                                        'description': '<img class="marker" id="Mansueto" src="img/thumbnail-mansueto@3x.png">',
-                                        // 'title': 'The Joe and Rika Mansueto Library'
-                                    }
-                                },
-                                {
-                                    'type': 'Feature',
-                                    'geometry': {
-                                        'type': 'Point',
-                                        'coordinates': [
-                                            -87.60276,
-                                            41.78986
-                                        ]
-                                    },
-                                    'properties': {
-                                        'description': '<img class="marker" id="Cummings" src="img/thumbnail-cummings@3x.png">',
-                                        // 'title': 'Cummings Life Science Center'
-                                    }
-                                },
-                                {
-                                    'type': 'Feature',
-                                    'geometry': {
-                                        'type': 'Point',
-                                        'coordinates': [
-                                            -87.60173,
-                                            41.78557
-                                        ]
-                                    },
-                                    'properties': {
-                                        'description': '<img class="marker" id="SSA" src="img/thumbnail-school-of-social-services-admin@3x.png">',
-                                        // 'title': 'School of Social Service Administration'
-                                    }
                                 }
+                                // ,
+                                // {
+                                //     'type': 'Feature',
+                                //     'geometry': {
+                                //         'type': 'Point',
+                                //         'coordinates': [-87.599, 41.78506]
+                                //     },
+                                //     'properties': {
+                                //         'description': '<img class="marker" id="Laird" src="img/thumbnail-law-school@3x.png">',
+                                //         // 'title': 'Laird Bell Law Quadrangle'
+                                //     }
+                                // },
+                                // {
+                                //     'type': 'Feature',
+                                //     'geometry': {
+                                //         'type': 'Point',
+                                //         'coordinates': [
+                                //             -87.60356,
+                                //             41.78536
+                                //         ]
+                                //     },
+                                //     'properties': {
+                                //         'description': '<img class="marker" id="Logan" src="img/thumbnail-logan@3x.png">',
+                                //         // 'title': 'Reva and David Logan Center for the Arts'
+                                //     }
+                                // },
+                                // {
+                                //     'type': 'Feature',
+                                //     'geometry': {
+                                //         'type': 'Point',
+                                //         'coordinates': [
+                                //             -87.59707,
+                                //             41.78856
+                                //         ]
+                                //     },
+                                //     'properties': {
+                                //         'description': '<img class="marker" id="Rockefeller" src="img/thumbnail-rockefeller-memorial-chapel@3x.png">',
+                                //         // 'title': 'Rockefeller Memorial Chapel'
+                                //     }
+                                // },
+                                // {
+                                //     'type': 'Feature',
+
+                                //     'geometry': {
+                                //         'type': 'Point',
+                                //         'coordinates': [
+                                //             -87.60086,
+                                //             41.79196
+                                //         ]
+                                //     },
+                                //     'properties': {
+                                //         'description': '<img class="marker" id="Mansueto" src="img/thumbnail-mansueto@3x.png">',
+                                //         // 'title': 'The Joe and Rika Mansueto Library'
+                                //     }
+                                // },
+                                // {
+                                //     'type': 'Feature',
+                                //     'geometry': {
+                                //         'type': 'Point',
+                                //         'coordinates': [
+                                //             -87.60276,
+                                //             41.78986
+                                //         ]
+                                //     },
+                                //     'properties': {
+                                //         'description': '<img class="marker" id="Cummings" src="img/thumbnail-cummings@3x.png">',
+                                //         // 'title': 'Cummings Life Science Center'
+                                //     }
+                                // },
+                                // {
+                                //     'type': 'Feature',
+                                //     'geometry': {
+                                //         'type': 'Point',
+                                //         'coordinates': [
+                                //             -87.60173,
+                                //             41.78557
+                                //         ]
+                                //     },
+                                //     'properties': {
+                                //         'description': '<img class="marker" id="SSA" src="img/thumbnail-school-of-social-services-admin@3x.png">',
+                                //         // 'title': 'School of Social Service Administration'
+                                //     }
+                                // }
 
                             ]
                         }
